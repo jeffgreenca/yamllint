@@ -2,6 +2,8 @@
 
 Just Dockerizes `yamllint` for CI.
 
+I use dependabot to keep this up to date, and automated Docker Hub builds.
+
 ## usage
 By default, it lints `/src` in the container:
 ```
