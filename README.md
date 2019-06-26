@@ -7,7 +7,7 @@ I use dependabot to keep this up to date, and automated Docker Hub builds.
 ## usage
 By default, it lints `/src` in the container:
 ```
-$ docker run --rm -v $PWD:/src jeffgreenca/yamllint
+$ docker run --rm -v $PWD:/src jeffgreenca/yamllint:v1.16.0
 /src/examples/invalid.yaml
   5:1       error    syntax error: could not find expected ':'
 ```
