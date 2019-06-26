@@ -1,8 +1,10 @@
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/jeffgreenca/yamllint.svg)
+
 # yamllint
 
 Just Dockerizes `yamllint` for CI.
 
-I use dependabot to keep this up to date, and automated Docker Hub builds.
+I use [dependabot](https://dependabot.com/) to keep this up to date, and the Docker builds are automatic.
 
 ## usage
 By default, it lints `/src` in the container:
@@ -12,4 +14,4 @@ $ docker run --rm -v $PWD:/src jeffgreenca/yamllint:v1.16.0
   5:1       error    syntax error: could not find expected ':'
 ```
 
-You can override this behavior by specifying any valid yamllint arguments.
+It just runs `yamllint`, so alternatively specify any valid yamllint arguments.
